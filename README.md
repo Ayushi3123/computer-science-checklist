@@ -124,7 +124,7 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 
 
 ## Don't feel you aren't smart enough
-- [ ] [The myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
+- [x] [The myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
 - [ ] [It's Dangerous to Go Alone: Battling the Invisible Monsters in Tech](https://www.youtube.com/watch?v=1i8ylq4j_EY)
 - [ ] [Believe you can change](http://www.aaronsw.com/weblog/dweck)
 
