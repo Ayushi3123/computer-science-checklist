@@ -8,7 +8,6 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 
 ## Table of Contents
 
-- [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
 - [Pick One Language](#pick-one-language)
 - [Book List](#book-list)
 - [Before you Get Started](#before-you-get-started)
@@ -117,13 +116,6 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 - [Computer Science Courses](#computer-science-courses)
 
 ---
-
-
-
-## Don't feel you aren't smart enough
-- [x] [The myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
-- [x] [It's Dangerous to Go Alone: Battling the Invisible Monsters in Tech](https://www.youtube.com/watch?v=1i8ylq4j_EY)
-- [x] [Believe you can change](http://www.aaronsw.com/weblog/dweck)
 
 ## Pick One Language
 
