@@ -9,8 +9,7 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 ## Table of Contents
 
 - [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
-- [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
-- [Pick One Language for the Interview](#pick-one-language-for-the-interview)
+- [Pick One Language](#pick-one-language)
 - [Book List](#book-list)
 - [Before you Get Started](#before-you-get-started)
 - [What you Won't See Covered](#what-you-wont-see-covered)
@@ -65,7 +64,6 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 - [Networking](#networking)
 - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling) (if you have 4+ years experience)
 - [Final Review](#final-review)
-- [Coding Question Practice](#coding-question-practice)
 - [Coding exercises/challenges](#coding-exerciseschallenges)
 - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
 - [Your Resume](#your-resume)
@@ -127,27 +125,9 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 - [x] [It's Dangerous to Go Alone: Battling the Invisible Monsters in Tech](https://www.youtube.com/watch?v=1i8ylq4j_EY)
 - [x] [Believe you can change](http://www.aaronsw.com/weblog/dweck)
 
-## Interview Process & General Interview Prep
+## Pick One Language
 
-- [ ] [ABC: Always Be Coding](https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2#.4heg8zvm4)
-- [ ] [Whiteboarding](https://medium.com/@dpup/whiteboarding-4df873dbba2e#.hf6jn45g1)
-- [ ] [Effective Whiteboarding during Programming Interviews](http://www.coderust.com/blog/2014/04/10/effective-whiteboarding-during-programming-interviews/)
-- [ ] [Demystifying Tech Recruiting](https://www.youtube.com/watch?v=N233T0epWTs)
-- [ ] Cracking The Coding Interview Set 1:
-    - [ ] [Gayle L McDowell - Cracking The Coding Interview (video)](https://www.youtube.com/watch?v=rEJzOhC5ZtQ)
-    - [ ] [Cracking the Coding Interview with Author Gayle Laakmann McDowell (video)](https://www.youtube.com/watch?v=aClxtDcdpsQ)
-- [ ] How to Get a Job at the Big 4:
-    - [ ] [How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft (video)](https://www.youtube.com/watch?v=YJZCUhxNCv8)
-
-- [ ] Prep Course:
-    - [ ] [Software Engineer Interview Unleashed (paid course)](https://www.udemy.com/software-engineer-interview-unleashed):
-        - Learn how to make yourself ready for software engineer interviews from a former Google interviewer.
-    - [ ] [Python for Data Structures, Algorithms, and Interviews! (paid course)](https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/):
-        - A Python centric interview prep course which covers data structures, algorithms, mock interviews and much more.
-
-## Pick One Language for the Interview
-
-You can use a language you are comfortable in to do the coding part of the interview, but for large companies, these are solid choices:
+You can use a language you are comfortable in, these are solid choices:
 
 - C++
 - Java
@@ -159,14 +139,6 @@ You could also use these, but read around first. There may be caveats:
 - Ruby
 
 You need to be very comfortable in the language and be knowledgeable.
-
-Read more about choices:
-- http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/
-- http://blog.codingforinterviews.com/best-programming-language-jobs/
-
-[See language resources here](programming-language-resources.md)
-
-You'll see some C, C++, and Python learning included below, because I'm learning. There are a few books involved, see the bottom.
 
 ## Book List
 
@@ -1247,46 +1219,6 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] [13. Intractability](https://www.youtube.com/watch?v=6qcaaDp4cdQ&list=PLe-ggMe31CTcZCjluBHw53e_ek2k9Kn-S)
 
 ---
-
-## Coding Question Practice
-
-Now that you know all the computer science topics above, it's time to practice answering coding problems.
-
-**Coding question practice is not about memorizing answers to programming problems.**
-
-Why you need to practice doing programming problems:
-- problem recognition, and where the right data structures and algorithms fit in
-- gathering requirements for the problem
-- talking your way through the problem like you will in the interview
-- coding on a whiteboard or paper, not a computer
-- coming up with time and space complexity for your solutions
-- testing your solutions
-
-There is a great intro for methodical, communicative problem solving in an interview. You'll get this from the programming
-interview books, too, but I found this outstanding:
-[Algorithm design canvas](http://www.hiredintech.com/algorithm-design/)
-
-No whiteboard at home? That makes sense. I'm a weirdo and have a big whiteboard. Instead of a whiteboard, pick up a
-large drawing pad from an art store. You can sit on the couch and practice. This is my "sofa whiteboard".
-I added the pen in the photo for scale. If you use a pen, you'll wish you could erase. Gets messy quick.
-
-![my sofa whiteboard](https://dng5l3qzreal6.cloudfront.net/2016/Oct/art_board_sm_2-1476233630368.jpg)
-
-Supplemental:
-
-- [Mathematics for Topcoders](https://www.topcoder.com/community/data-science/data-science-tutorials/mathematics-for-topcoders/)
-- [Dynamic Programming – From Novice to Advanced](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)
-- [MIT Interview Materials](https://web.archive.org/web/20160906124824/http://courses.csail.mit.edu/iap/interview/materials.php)
-- [Exercises for getting better at a given language](http://exercism.io/languages)
-
-**Read and Do Programming Problems (in this order):**
-
-- [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
-    - answers in C, C++ and Java
-- [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-    - answers in Java
-
-See [Book List above](#book-list)
 
 ## Coding exercises/challenges
 
