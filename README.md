@@ -68,7 +68,6 @@ This is a multi-month study plan for going from web developer (self-taught, no C
 - [Your Resume](#your-resume)
 - [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
 - [Have questions for the interviewer](#have-questions-for-the-interviewer)
-- [Once You've Got The Job](#once-youve-got-the-job)
 
 ---------------- Everything below this point is optional ----------------
 
@@ -351,9 +350,9 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
             you'll quickly get proficient. Understanding C helps you understand how programs and memory work.
         - [answers to questions](https://github.com/lekkas/c-algorithms)
 
-- [ ] **How computers process a program:**
-    - [ ] [How does CPU execute program (video)](https://www.youtube.com/watch?v=42KTvGYQYnA)
-    - [ ] [Machine Code Instructions (video)](https://www.youtube.com/watch?v=Mv2XQgpbTNE)
+- [x] **How computers process a program:**
+    - [x] [How does CPU execute program (video)](https://www.youtube.com/watch?v=42KTvGYQYnA)
+    - [x] [Machine Code Instructions (video)](https://www.youtube.com/watch?v=Mv2XQgpbTNE)
 
 ## Algorithmic complexity / Big-O / Asymptotic analysis
 - nothing to implement
@@ -1287,14 +1286,6 @@ Have a story, not just data, about something you accomplished.
 - What are you working on?
 - What do you like about it?
 - What is the work life like?
-
-## Once You've Got The Job
-
-Congratulations!
-
-Keep learning.
-
-You're never really done.
 
 ---
 
