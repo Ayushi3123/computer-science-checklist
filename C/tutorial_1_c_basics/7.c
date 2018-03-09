@@ -148,6 +148,9 @@ void getCharInfo()
     }
 }
 
+/**
+ * Char information 
+ */
 void partSix()
 {
     getCharInfo();
