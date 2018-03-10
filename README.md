@@ -1,5 +1,9 @@
 # Coding Interview University
 
+## Take note
+
+This is my personal repository for all tutorials and other learning that I do. I do not strictly adhere to this list.
+
 ## What is it?
 
 This is a multi-month study plan for going from web developer (self-taught, no CS degree) to software engineer for a large company.
