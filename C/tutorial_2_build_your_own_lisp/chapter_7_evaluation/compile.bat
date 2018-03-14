@@ -1,1 +1,1 @@
-gcc -Wall parsing.c "..\__lib__\mpc\mpc.c" -o parsing
+gcc -Wall evaluation.c "..\__lib__\mpc\mpc.c" -o evaluation
