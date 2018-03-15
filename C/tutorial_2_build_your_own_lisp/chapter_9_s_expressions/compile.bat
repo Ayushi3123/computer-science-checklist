@@ -1,0 +1,1 @@
+gcc -Wall s_expressions.c "..\__lib__\mpc\mpc.c" -o s_expressions
