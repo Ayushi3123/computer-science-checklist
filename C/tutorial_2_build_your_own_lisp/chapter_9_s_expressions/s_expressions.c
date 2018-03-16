@@ -52,29 +52,144 @@ typedef struct
 {
     int type;
     long num;
-    int err;
+    //error and symbol types have some string data
+    char *err;
+    char *sym;
+    //count and pointer to a list of 'lval'
+    int count;
+    struct lval **cell;
 } lval;
 
 /**
- * Create a new lval
+ * Create a new lval and return the pointer
  */
-lval lval_num(long x)
+lval *lval_num(long x)
 {
-    lval v;
-    v.type = LVAL_NUM,
-    v.num = x;
+    lval *v = malloc(sizeof(lval));
+    v->type = LVAL_NUM,
+    v->num = x;
     return v;
 }
 
 /**
- * Create a new lval err
+ * Create a new lval err and return the pointer
  */
-lval lval_err(int x)
+lval *lval_err(char *m)
 {
-    lval v;
-    v.type = LVAL_ERR;
-    v.err = x;
+    lval *v = malloc(sizeof(lval));
+    v->type = LVAL_ERR;
+    v->err = malloc(strlen(m) + 1);
+    strcopy(v->err, m);
     return v;
+}
+
+lval *lval_sym(char *s)
+{
+    lval *v = malloc(sizeof(lval));
+    v->type = LVAL_SYM;
+    v->sym = malloc(strlen(s) + 1);
+    strcopy(v->sym, s);
+    return v;
+}
+
+lval *lval_sexpr(void)
+{
+    lval *v = malloc(sizeof(lval));
+    v->type = LVAL_SEXPR;
+    v->count = 0;
+    v->cell = NULL;
+    return v;
+}
+
+void lval_del(lval *v)
+{
+    switch (v->type)
+    {
+    case LVAL_NUM:
+        break;
+    case LVAL_ERR:
+        free(v->err);
+        break;
+    case LVAL_SYM:
+        free(v->sym);
+        break;
+    case LVAL_SEXPR:
+        for (int i = 0; i < v->count; i++)
+        {
+            lval_del(v->cell[i]);
+        }
+        free(v->cell);
+        break;
+    }
+
+    // SET V FREE !!!
+    free(v);
+}
+
+/**
+ * Returns an lval_num lval if no error is set
+ */
+lval *lval_read_num(mpc_ast_t *t)
+{
+    errno = 0;
+    long x = strtol(t->contents, NULL, 10);
+    return errno != ERANGE ? lval_num(x) : lval_err("invalid number");
+}
+
+lval *lval_add(lval *v, lval *x)
+{
+    v->count++;
+    v->cell = realloc(v->cell, sizeof(lval *) * v->count);
+    v->cell[v->count - 1] = x;
+    return v;
+}
+
+lval *lval_read(mpc_ast_t *t)
+{
+
+    // return the symbol and number types
+    if (strstr(t->tag, "number"))
+    {
+        return lval_read_num(t);
+    }
+    if (strstr(t->tag, "symbol"))
+    {
+        return lval_sym(t->contents);
+    }
+
+    lval *x = NULL;
+
+    // if it is root or sexpr create an empty list
+    // code seems a bit redundant, might change later in
+    // tutorial?
+    if (strcmp(t->tag, ">") == 0)
+    {
+        x = lval_sexpr();
+    }
+    if (strcmp(t->tag, "sexpr") == 0)
+    {
+        x = lval_sexpr();
+    }
+
+    // fill with all the valid expressions in children list
+    for (int i = 0; i < t->children_num; i++)
+    {
+        // more redundant code ??? oh well
+        if (strcmp(t->children[i]->contents, "(") == 0)
+        {
+            continue;
+        }
+        if (strcmp(t->children[i]->contents, ")") == 0)
+        {
+            continue;
+        }
+        if (strcmp(t->children[i]->contents, "regex") == 0)
+        {
+            continue;
+        }
+
+        x = lval_add(x, lval_read(t->children[i]));
+    }
 }
 
 /**
