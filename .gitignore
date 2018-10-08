@@ -117,3 +117,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+*.pyc
+*.idea
