@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Edit Note</h2>
+
+    <%= form_for @note, url: {action: "update"} do |f| %>
+        <div class="form-group">
+            <%= f.label :title %><br />
+            <%= f.text_field :title, autofocus: true, class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :content %><br />
+            <%= f.text_field :content, class: "form-control" %>
+        </div>
+
+        <div class="actions">
+            <%= f.submit "Save Note", class: "btn btn-primary" %>
+        </div>
+    <% end %>
+</div>

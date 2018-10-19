@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Welcome to Noty</h1>
+    <p>
+        Noty is probably the worst note taking app known to man.
+    </p>
+    <p>
+        <% if user_signed_in? == true %>
+            <a href="/notes">View Notes</a> | <a href="/notes/new">Create A New Note</a>
+        <% else %>
+            You need to <a href="/users/sign_in">Log In</a> to create a notes
+        <% end %>
+    </p>
+</div>
